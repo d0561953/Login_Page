@@ -1,23 +1,21 @@
 html, body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    height: 100%; 
+    overflow: hidden;
     margin: 0;
     padding: 0;
     background: #A6D9F7;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
 }
 .wrapper {
-    width: 100%;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    width: auto;
+    height: auto;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-     justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
-     -ms-flex-align: center;
-      align-items: center;
+    align-items: center;
 }
 .container {
     width: 800px;
@@ -122,17 +120,15 @@ b {
 }
 
 .newanchor{
-    text-align: left;
     padding-top: 20px;
     padding-left: 60px;
-    position: fixed;
-    width: 150px;
+    text-align: left;
+    width: 50%;
 }
 .newanchor2{
     text-align: right;
-    padding-left: 90px;
-    padding-top: 20px;
-    width: 60%;
+    padding-right: 50px;
+    width: 50%;
 }
 
 .btn-group-sm{
@@ -158,6 +154,7 @@ b {
     color: white;
     transition: 300ms;
     cursor: pointer;
+    
 }
 .btn.btn-secondary{
     background: #10379b;
@@ -179,7 +176,7 @@ a:hover {
 
 }
 a {
-    display: block;
+    display: table-cell;
     text-decoration: none;
     color: black;
     font-size: .8em;
