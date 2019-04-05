@@ -1,0 +1,22 @@
+.backgroundframe {
+    width: 100%;
+    height: 100%;
+    padding-left: 15%;
+    padding-top: 5%;
+    background: #252830;
+}
+
+.logframe {
+    width: 83%;
+    height: 90%;
+    border-radius: 50px;
+    background: #93A3BC;
+}
+
+.title {
+    width: 600px;
+    height: 500px;
+    left: 300px;
+    top: 280px;
+    color: #FFFFFF;
+}
