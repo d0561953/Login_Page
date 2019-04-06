@@ -33,6 +33,7 @@ app.get('/sign_up', function (req,res){
 
 app.get('/register_account', function (req,res){
     console.log("REGISTER_USER");
+    // res.render('src/signup');
     res.sendFile(path.join(__dirname + '/src/signup.html'));
 })
 
