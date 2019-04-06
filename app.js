@@ -21,6 +21,14 @@ app.get('/javascript/script.js', function (req,res){
     res.sendFile(path.join(__dirname + '/src/javascript/script.js'));
 })
 
+app.get('/img-01.png', function (req,res){
+    res.sendFile(path.join(__dirname + '/src/images/img-01.png'));
+})
+
+app.get('/css/font-awesome.min.css', function (req,res){
+    res.sendFile(path.join(__dirname + '/src/fonts/font-awesome-4.7.0/css/font-awesome.min.css'));
+})
+
 app.get('/sign_in', function (req,res){
     res.send("SING_IN");
     console.log("USER_SIGN_IN");

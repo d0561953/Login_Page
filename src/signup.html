@@ -4,59 +4,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link href="../src/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
-    <div class="backgroundframe">
-        <div class="logframe">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col align-self-center">
-                        <p class="text-left" style="padding-left: 20px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 80px; color: #FFFFFF;">
-                            Sign Up
-                        </p>
-                    </div>
-                    <div class="col" style="background:#FFFFFF; height: 100%; border-radius: 0px 50px 50px 0px">
-                        <div class="row justify-content-end" style="padding-top: 15%; padding-right: 15%">
-                            <button type="button" class="btn btn-outline-primary">Registers</button>
-                            <button type="button" class="btn btn-outline-secondary">Login</button>
-                        </div>
-                        <div class="container">
-                            <div class="row" style="padding-left: 10%">
-                                <div class="col align-self-center">
-                                    <p class="text-left" style="padding-top: 30px; font-style: normal; font-weight: normal; font-size: 36px; line-height: normal;">
-                                        Sign Up
-                                    </p>
-                                </div>
-                                <div class="w-100"></div>
-                                <form style="padding-left: 15px; width:80%">
-                                    <div class="form-group" style="padding-top: 15px">
-                                        <label for="exampleInputName">Full Name</label>
-                                        <input type="name" class="form-control" id="name_input" placeholder="Enter your name here" style="border-radius:50px">
-                                   
-                                    <div class="form-group" style="padding-top: 15px; padding-bottom: 15px">
-                                        <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="email_input" aria-describedby="emailHelp" placeholder="Enter E-mail here" style="border-radius:50px">
-                                    
-                                    <div class="form-group" style="padding-top: 15px; padding-bottom: 15px">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input type="password" class="form-control" id="pass_input" placeholder="Enter Password here" style="border-radius:50px">
-                                    
-                                    <div class="form-group" style="padding-top: 15px; padding-bottom: 15px">
-                                                <label for="exampleComfirmPassword1">Comfirm password</label>
-                                                <input type="comfirm password" class="form-control" id="comfirm_pass_input" placeholder="Comfirm Password here" style="border-radius:50px">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary" style="width: 100%; border-radius:50px">Sign Up</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+    <div class="limiter">
+        <div class="backgroundframe">
+            <div class="logframe">
+                <div class="login100-pic js-tilt" data-tilt>
+                    <img src="/img-01.png" alt="IMG">
                 </div>
+                <form class="login100-form validate-form">
+                    <div class="row justify-content-end" style="padding-bottom: 30px">
+                        <button type="button" id="log_btn" class="btn btn-outline-secondary">
+                            Log In
+                        </button>
+                        <button type="button" id="reg_btn" class="btn btn-outline-primary">
+                            Register
+                        </button>
+                    </div>
+                    <span class="login100-form-title">
+                        Register Account
+                    </span>
+                    <div class="form-group" style="padding-top: 15px">
+                        <label for="exampleInputName">Full Name</label>
+                        <input type="name" class="form-control" id="name_input" placeholder="Enter your name" style="border-radius:50px">
+                    <div class="form-group" style="padding-top: 15px">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="email_input" aria-describedby="emailHelp" placeholder="Enter E-mail" style="border-radius:50px">
+                    <div class="form-group" style="padding-top: 15px">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="pass_input" placeholder="Enter Password" style="border-radius:50px">
+                    <div class="form-group" style="padding-top: 15px;">
+                        <label for="exampleComfirmPassword1">Comfirm password</label>
+                        <input type="comfirm password" class="form-control" id="comfirm_pass_input" placeholder="Re-type Password" style="border-radius:50px">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; border-radius:50px">Sign Up</button>
+                </form>
             </div>
         </div>
     </div>
