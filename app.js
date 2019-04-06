@@ -17,6 +17,10 @@ app.get('/signup_style.css', function (req,res){
     res.sendFile(path.join(__dirname + '/src/css/signup.css'));
 })
 
+app.get('/javascript/script.js', function (req,res){
+    res.sendFile(path.join(__dirname + '/src/javascript/script.js'));
+})
+
 app.get('/sign_in', function (req,res){
     res.send("SING_IN");
     console.log("USER_SIGN_IN");
@@ -28,8 +32,8 @@ app.get('/sign_up', function (req,res){
 })
 
 app.get('/register_account', function (req,res){
-    res.send("REGISTER");
-    console.log("REGISTER_NEW_USER");
+    console.log("REGISTER_USER");
+    res.sendFile(path.join(__dirname + '/src/signup.html'));
 })
 
 app.listen(21128, function(){

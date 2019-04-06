@@ -12,7 +12,8 @@
 }
 
 .logframe {
-    width: 83%;
+    flex: auto;
+    width: 80%;
     height: 90%;
     border-radius: 50px;
     background: #9152f8;
