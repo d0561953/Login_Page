@@ -6,7 +6,7 @@ const app = express();
 app.use(morgan('dev'));
 
 app.get('/', function (req,res){
-    res.sendFile(path.join(__dirname + '/src/signin.html'));
+    res.sendFile(path.join(__dirname + '/src/main page.html'));
 })
 
 app.get('/src/css/style.css', function (req,res){
