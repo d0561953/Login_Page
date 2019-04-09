@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up</title>
 
-    <link href="../src/css/style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -12,7 +12,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
-
 <body>
     <div class="limiter">
         <div class="backgroundframe">
@@ -34,22 +33,23 @@
                     </span>
                     <div class="form-group" style="padding-top: 15px">
                         <label for="exampleInputName">Full Name</label>
-                        <input type="name" class="form-control" id="name_input" placeholder="Enter your name" style="border-radius:50px">
+                        <input type="name" class="form-control" id="name_input" placeholder="Enter your name" style="border-radius:50px" required>
                     <div class="form-group" style="padding-top: 15px">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="email_input" aria-describedby="emailHelp" placeholder="Enter E-mail" style="border-radius:50px">
+                        <input type="email" class="form-control" id="email_input" aria-describedby="emailHelp" placeholder="Enter E-mail" style="border-radius:50px" required>
                     <div class="form-group" style="padding-top: 15px">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="pass_input" placeholder="Enter Password" style="border-radius:50px">
+                        <input type="password" class="form-control" id="pass_input" placeholder="Enter Password" style="border-radius:50px" required>
                     <div class="form-group" style="padding-top: 15px;">
                         <label for="exampleComfirmPassword1">Comfirm password</label>
-                        <input type="comfirm password" class="form-control" id="comfirm_pass_input" placeholder="Re-type Password" style="border-radius:50px">
+                        <input type="password" class="form-control" id="comfirm_pass_input" placeholder="Re-type Password" style="border-radius:50px" required>
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%; border-radius:50px">Sign Up</button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

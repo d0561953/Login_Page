@@ -6,43 +6,38 @@ const app = express();
 app.use(morgan('dev'));
 
 app.get('/', function (req,res){
-    res.sendFile(path.join(__dirname + '/src/main page.html'));
+    res.sendFile(path.join(__dirname + '/src/signin.html'));
 })
 
-app.get('/src/css/style.css', function (req,res){
+app.get('/sign_in', function (req,res){
+    //sign in function
+    console.log("USER_SIGN_IN");
+})
+
+app.get('/sign_up', function (req,res){
+    //Go to Sign Up Page.
+    res.sendFile(path.join(__dirname + '/src/signup.html'));
+})
+
+app.get('/register_account/:name/:id/:password', function (req,res){
+    //Register function.
+})
+
+//Get data
+app.get('/style.css', function (req,res){
     res.sendFile(path.join(__dirname + '/src/css/style.css'));
 })
 
-app.get('/signup_style.css', function (req,res){
-    res.sendFile(path.join(__dirname + '/src/css/signup.css'));
-})
-
-app.get('/javascript/script.js', function (req,res){
+app.get('/script.js', function (req,res){
     res.sendFile(path.join(__dirname + '/src/javascript/script.js'));
-})
-
-app.get('/img-01.png', function (req,res){
-    res.sendFile(path.join(__dirname + '/src/images/img-01.png'));
 })
 
 app.get('/css/font-awesome.min.css', function (req,res){
     res.sendFile(path.join(__dirname + '/src/fonts/font-awesome-4.7.0/css/font-awesome.min.css'));
 })
 
-app.get('/sign_in', function (req,res){
-    res.send("SING_IN");
-    console.log("USER_SIGN_IN");
-})
-
-app.get('/sign_up', function (req,res){
-    res.send("SING_UP");
-    console.log("USER_SIGN_UP");
-})
-
-app.get('/register_account', function (req,res){
-    console.log("REGISTER_USER");
-    // res.render('src/signup');
-    res.sendFile(path.join(__dirname + '/src/signup.html'));
+app.get('/img-01.png', function (req,res){
+    res.sendFile(path.join(__dirname + '/src/images/img-01.png'));
 })
 
 app.listen(21128, function(){

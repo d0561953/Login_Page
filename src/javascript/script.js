@@ -1,4 +1,8 @@
 $('#reg_btn').click(function(){
-    console.log("BTN_CLICK");
     location.replace("/register_account");
 })
+
+$('#log_btn').click(function(){
+    location.replace("/");
+})
+
