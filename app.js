@@ -19,8 +19,13 @@ app.get('/sign_up', function (req,res){
     res.sendFile(path.join(__dirname + '/src/signup.html'));
 })
 
-app.get('/register_account/:name/:id/:password', function (req,res){
+app.get('/register_account/:name/:email/:password', function (req,res){
     //Register function.
+    var username = req.params.name;
+    var useremail = req.params.email;
+    var pass = req.params.password;
+    var result = "username: " + username + "useremail: " + useremail + "password: " + pass;
+    res.send(result);
 })
 
 //Get data

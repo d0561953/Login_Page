@@ -20,4 +20,17 @@ $('#btn_signup').click(function() {
     if(pass1 !== pass2){
         alert("Password not match!!!");
     }
+    else{
+        alert("Wait for momment");
+        $.ajax({
+            type: "GET",
+            url: '/register_account/' + username + '/' + useremail + '/' + pass1,
+            success:function(result){
+                console.log(result);
+            },
+            error: function(error){
+                alert("Error $(error)");
+            }
+        })
+    }
 })
