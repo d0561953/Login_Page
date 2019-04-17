@@ -6,30 +6,62 @@ $('#log_btn').click(function(){
     location.replace("/");
 })
 
-$('#btn_signup').click(function() {
-    var username = $('#name_input').val();
-    var useremail = $('#email_input').val();
-    var pass1 = $('#pass_input').val();
-    var pass2 = $('#second_pass_input').val();
+$('#btnsignup').click(function(){
 
-    console.log("username" + username);
-    console.log("useremail" + useremail);
-    console.log("pass1" + pass1);
-    console.log("pass2" + pass2);
+    $.ajax({
+        url: "/register",
+        type: "POST",
+        data: {
+            username: $('#names').val(),
+            useremail: $('#emails').val(),
+            password: $('#passs').val()
+        },
+        success:function (result) {
+            console.log(result);
+            alert("Register Successful");
+        },
+        error:function (error) {
+            alert("Error" + error);
+        }
+    })
+})
 
-    if(pass1 !== pass2){
-        alert("Password not match!!!");
+$('#btn_signin').click(function(){
+    
+    var emails = $('#email_input').val();
+    var password = $('#pass_input').val();
+
+    emails = emails.trim();
+    password = password.trim();
+
+    if(emails.length <= 0){
+        alert("Email invaild");
+        return 0;
+    }
+    if(password.length <= 0){
+        alert("Password invaild");
+        return 0;
     }
     else{
-        alert("Wait for momment");
         $.ajax({
-            type: "GET",
-            url: '/register_account/' + username + '/' + useremail + '/' + pass1,
-            success:function(result){
-                console.log(result);
+            url: "/login",
+            type: "POST",
+            data: {
+                useraccount: emails,
+                userpassword: password
+            },
+            success: function(result){
+                //Check return result if correct go to main page
+                if(result === "Well Done"){
+                    alert("Login Successful");
+                    location.replace("/mainpages");
+                }else{
+                    alert("Login Failed");
+                    return 0;
+                }
             },
             error: function(error){
-                alert("Error $(error)");
+                alert("Error" + error);
             }
         })
     }
