@@ -24,7 +24,7 @@ app.use('/signUp', registerRouter);
 
 app.get('/mainpages', function (req, res) {
     // res.sendFile(path.join(__dirname + '/src/view/mainpage.html'));\
-    res.send("hello World")
+    res.send("hello World");
 });
 
 app.post('/login', function (req, res) {
